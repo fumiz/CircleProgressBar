@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BF4BF26149DCEC1002D4402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF4BF25149DCEC1002D4402 /* UIKit.framework */; };
+		9BF4BF28149DCEC1002D4402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF4BF27149DCEC1002D4402 /* Foundation.framework */; };
+		9BF4BF2A149DCEC1002D4402 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF4BF29149DCEC1002D4402 /* CoreGraphics.framework */; };
+		9BF4BF30149DCEC1002D4402 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4BF2E149DCEC1002D4402 /* InfoPlist.strings */; };
+		9BF4BF32149DCEC1002D4402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4BF31149DCEC1002D4402 /* main.m */; };
+		9BF4BF36149DCEC1002D4402 /* cpbAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4BF35149DCEC1002D4402 /* cpbAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9BF4BF21149DCEC1002D4402 /* CircleProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF4BF25149DCEC1002D4402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9BF4BF27149DCEC1002D4402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9BF4BF29149DCEC1002D4402 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9BF4BF2D149DCEC1002D4402 /* CircleProgressBar-Info.plist */ = {isa = PBXFileReference; path = "CircleProgressBar-Info.plist"; sourceTree = "<group>"; };
+		9BF4BF2F149DCEC1002D4402 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BF4BF31149DCEC1002D4402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BF4BF33149DCEC1002D4402 /* CircleProgressBar-Prefix.pch */ = {isa = PBXFileReference; path = "CircleProgressBar-Prefix.pch"; sourceTree = "<group>"; };
+		9BF4BF34149DCEC1002D4402 /* cpbAppDelegate.h */ = {isa = PBXFileReference; path = cpbAppDelegate.h; sourceTree = "<group>"; };
+		9BF4BF35149DCEC1002D4402 /* cpbAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cpbAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BF4BF1E149DCEC1002D4402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF4BF26149DCEC1002D4402 /* UIKit.framework in Frameworks */,
+				9BF4BF28149DCEC1002D4402 /* Foundation.framework in Frameworks */,
+				9BF4BF2A149DCEC1002D4402 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BF4BF16149DCEC1002D4402 = {
+			isa = PBXGroup;
+			children = (
+				9BF4BF2B149DCEC1002D4402 /* CircleProgressBar */,
+				9BF4BF24149DCEC1002D4402 /* Frameworks */,
+				9BF4BF22149DCEC1002D4402 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BF4BF22149DCEC1002D4402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BF4BF21149DCEC1002D4402 /* CircleProgressBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BF4BF24149DCEC1002D4402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BF4BF25149DCEC1002D4402 /* UIKit.framework */,
+				9BF4BF27149DCEC1002D4402 /* Foundation.framework */,
+				9BF4BF29149DCEC1002D4402 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BF4BF2B149DCEC1002D4402 /* CircleProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				9BF4BF34149DCEC1002D4402 /* cpbAppDelegate.h */,
+				9BF4BF35149DCEC1002D4402 /* cpbAppDelegate.m */,
+				9BF4BF2C149DCEC1002D4402 /* Supporting Files */,
+			);
+			path = CircleProgressBar;
+			sourceTree = "<group>";
+		};
+		9BF4BF2C149DCEC1002D4402 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BF4BF2D149DCEC1002D4402 /* CircleProgressBar-Info.plist */,
+				9BF4BF2E149DCEC1002D4402 /* InfoPlist.strings */,
+				9BF4BF31149DCEC1002D4402 /* main.m */,
+				9BF4BF33149DCEC1002D4402 /* CircleProgressBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BF4BF20149DCEC1002D4402 /* CircleProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BF4BF39149DCEC1002D4402 /* Build configuration list for PBXNativeTarget "CircleProgressBar" */;
+			buildPhases = (
+				9BF4BF1D149DCEC1002D4402 /* Sources */,
+				9BF4BF1E149DCEC1002D4402 /* Frameworks */,
+				9BF4BF1F149DCEC1002D4402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleProgressBar;
+			productName = CircleProgressBar;
+			productReference = 9BF4BF21149DCEC1002D4402 /* CircleProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BF4BF18149DCEC1002D4402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9BF4BF1B149DCEC1002D4402 /* Build configuration list for PBXProject "CircleProgressBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BF4BF16149DCEC1002D4402;
+			productRefGroup = 9BF4BF22149DCEC1002D4402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BF4BF20149DCEC1002D4402 /* CircleProgressBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BF4BF1F149DCEC1002D4402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF4BF30149DCEC1002D4402 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BF4BF1D149DCEC1002D4402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF4BF32149DCEC1002D4402 /* main.m in Sources */,
+				9BF4BF36149DCEC1002D4402 /* cpbAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BF4BF2E149DCEC1002D4402 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BF4BF2F149DCEC1002D4402 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BF4BF37149DCEC1002D4402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BF4BF38149DCEC1002D4402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BF4BF3A149DCEC1002D4402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CircleProgressBar/CircleProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "CircleProgressBar/CircleProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9BF4BF3B149DCEC1002D4402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CircleProgressBar/CircleProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "CircleProgressBar/CircleProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BF4BF1B149DCEC1002D4402 /* Build configuration list for PBXProject "CircleProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF4BF37149DCEC1002D4402 /* Debug */,
+				9BF4BF38149DCEC1002D4402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BF4BF39149DCEC1002D4402 /* Build configuration list for PBXNativeTarget "CircleProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF4BF3A149DCEC1002D4402 /* Debug */,
+				9BF4BF3B149DCEC1002D4402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BF4BF18149DCEC1002D4402 /* Project object */;
+}
