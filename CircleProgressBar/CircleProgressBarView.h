@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+@class ProgressAnimationParameter;
+
 @interface CircleProgressBarView : UIView {
     // 0%時点の角度
     CGFloat _startAngle;
@@ -40,5 +42,6 @@
 @property (nonatomic, assign) CGFloat borderWidth;
 @property (nonatomic, retain) UIColor *fillColor;
 
+-(void)animate:(ProgressAnimationParameter *)param;
 -(void)setProgressValue:(CGFloat)progressValue withAnimation:(BOOL)animation;
 @end

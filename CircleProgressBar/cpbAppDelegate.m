@@ -14,7 +14,7 @@
 
 -(void)click:(id)arg
 {
-    [self.cpb setProgressValue:80 withAnimation:YES];
+    [self.cpb setProgressValue:100 withAnimation:YES];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -26,8 +26,9 @@
     [self.window addSubview:cpb];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(0, 0, 100, 30);
+    button.frame = CGRectMake(0, 20, 100, 30);
     [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"push to start" forState:UIControlStateNormal];
     [self.window addSubview:button];
     self.cpb = cpb;
     

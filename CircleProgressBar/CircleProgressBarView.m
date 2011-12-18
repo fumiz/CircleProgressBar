@@ -2,6 +2,26 @@
 
 static inline float radians(double degrees) { return degrees * M_PI / 180.0; }
 
+@interface ProgressAnimationParameter : NSObject {
+@private
+    CGFloat current;
+    CGFloat target;
+}
+@property (nonatomic, assign) CGFloat current;
+@property (nonatomic, assign) CGFloat target;
+@end
+@implementation ProgressAnimationParameter
+@synthesize current, target;
++(id)param:(CGFloat)argCurrent target:(CGFloat)argTarget {
+    ProgressAnimationParameter *param = [[[ProgressAnimationParameter alloc] init] autorelease];
+    if (param != nil) {
+        param.current = argCurrent;
+        param.target = argTarget;
+    }
+    return param;
+}
+@end
+
 @interface CircleProgressBarView()
 - (CGFloat)calcProgress;
 - (CGFloat)calcEndAngle;
@@ -34,10 +54,10 @@ static inline float radians(double degrees) { return degrees * M_PI / 180.0; }
         self.backgroundColor = [UIColor whiteColor];
         
         self.startAngle = -90;
-        self.maxAngle = 180;
+        self.maxAngle = 360;
         self.progressValueMin = 0;
         self.progressValueMax = 100;
-        self.progressValue = 50;
+        self.progressValue = 0;
         
         self.width = 20.0f;
         self.radius = 100.0f;
@@ -50,21 +70,16 @@ static inline float radians(double degrees) { return degrees * M_PI / 180.0; }
     return self;
 }
 
--(void)animate:(CGFloat)value finishValue:(CGFloat)finishValue {
-    [UIView animateWithDuration:10.0f
-                          delay:1.0f
-                        options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear
-                     animations:^{
-                         if (value > finishValue) {
-                             return;
-                         } else {
-                             [self setProgressValue:value];
-                             [self animate:value+1 finishValue:finishValue];
-                         }
-                     }
-                     completion:^(BOOL finished) {
-                         NSLog(@"こーるどc");
-                     }];
+-(void)animate:(ProgressAnimationParameter *)param {
+    CGFloat value = param.current;
+    CGFloat finishValue = param.target;
+    
+    if (value > finishValue) {
+        return;
+    } else {
+        [self setProgressValue:value];
+        [self performSelector:@selector(animate:) withObject:[ProgressAnimationParameter param:param.current + 1 target:param.target] afterDelay:0.1f];
+    }
 }
 
 -(void)setProgressValue:(CGFloat)progressValue withAnimation:(BOOL)animation {
@@ -72,7 +87,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180.0; }
         self.progressValue = progressValue;
         return;
     }
-    [self animate:self.progressValue finishValue:progressValue];
+    [self performSelector:@selector(animate:) withObject:[ProgressAnimationParameter param:self.progressValue + 1 target:progressValue] afterDelay:0.1f];
 }
 
 -(void)setProgressValue:(CGFloat)progressValue {
