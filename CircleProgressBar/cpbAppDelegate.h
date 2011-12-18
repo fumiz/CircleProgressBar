@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface cpbAppDelegate : UIResponder <UIApplicationDelegate>
+@class CircleProgressBarView;
 
+@interface cpbAppDelegate : UIResponder <UIApplicationDelegate> {
+    CircleProgressBarView *_cpb;
+}
+@property (nonatomic, retain) CircleProgressBarView *cpb;
 @property (strong, nonatomic) UIWindow *window;
-
 @end

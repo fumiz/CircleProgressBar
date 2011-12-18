@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA91E82149DCF2300CF096B /* CircleProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91E81149DCF2300CF096B /* CircleProgressBarView.m */; };
 		9BF4BF26149DCEC1002D4402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF4BF25149DCEC1002D4402 /* UIKit.framework */; };
 		9BF4BF28149DCEC1002D4402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF4BF27149DCEC1002D4402 /* Foundation.framework */; };
 		9BF4BF2A149DCEC1002D4402 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF4BF29149DCEC1002D4402 /* CoreGraphics.framework */; };
@@ -16,15 +17,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BA91E80149DCF2300CF096B /* CircleProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressBarView.h; sourceTree = "<group>"; };
+		9BA91E81149DCF2300CF096B /* CircleProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressBarView.m; sourceTree = "<group>"; };
 		9BF4BF21149DCEC1002D4402 /* CircleProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF4BF25149DCEC1002D4402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BF4BF27149DCEC1002D4402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BF4BF29149DCEC1002D4402 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9BF4BF2D149DCEC1002D4402 /* CircleProgressBar-Info.plist */ = {isa = PBXFileReference; path = "CircleProgressBar-Info.plist"; sourceTree = "<group>"; };
+		9BF4BF2D149DCEC1002D4402 /* CircleProgressBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CircleProgressBar-Info.plist"; sourceTree = "<group>"; };
 		9BF4BF2F149DCEC1002D4402 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF4BF31149DCEC1002D4402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9BF4BF33149DCEC1002D4402 /* CircleProgressBar-Prefix.pch */ = {isa = PBXFileReference; path = "CircleProgressBar-Prefix.pch"; sourceTree = "<group>"; };
-		9BF4BF34149DCEC1002D4402 /* cpbAppDelegate.h */ = {isa = PBXFileReference; path = cpbAppDelegate.h; sourceTree = "<group>"; };
+		9BF4BF33149DCEC1002D4402 /* CircleProgressBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-Prefix.pch"; sourceTree = "<group>"; };
+		9BF4BF34149DCEC1002D4402 /* cpbAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpbAppDelegate.h; sourceTree = "<group>"; };
 		9BF4BF35149DCEC1002D4402 /* cpbAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cpbAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +77,8 @@
 			children = (
 				9BF4BF34149DCEC1002D4402 /* cpbAppDelegate.h */,
 				9BF4BF35149DCEC1002D4402 /* cpbAppDelegate.m */,
+				9BA91E80149DCF2300CF096B /* CircleProgressBarView.h */,
+				9BA91E81149DCF2300CF096B /* CircleProgressBarView.m */,
 				9BF4BF2C149DCEC1002D4402 /* Supporting Files */,
 			);
 			path = CircleProgressBar;
@@ -153,6 +158,7 @@
 			files = (
 				9BF4BF32149DCEC1002D4402 /* main.m in Sources */,
 				9BF4BF36149DCEC1002D4402 /* cpbAppDelegate.m in Sources */,
+				9BA91E82149DCF2300CF096B /* CircleProgressBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +260,7 @@
 				9BF4BF3B149DCEC1002D4402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
